@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Profit Website</title>
+    <style>
+        .hero {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3adYOUiJfebyo3fH_t1VNMFWpBYr0EPY4wA&s') center/cover no-repeat;
+            height: 80vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 40px;
+            text-align: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .service-box {
+            background: #f9f9f9;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            position: relative;
+        }
+        .about-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            opacity: 0.5;  /* Optional: Adjust opacity to make it look more subtle */
+        }
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .about-content {
+            max-width: 800px;
+            z-index: 1;  /* Ensure the content is on top */
+            position: relative;
+        }
+        .about-content h2 {
+            margin-bottom: 10px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero-content {
+            text-align: center;
+        }
+        .hero-content h1 {
+            font-size: 3em;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .buttons .join {
+            background-color: #007bff;
+        }
+
+        .values {
+            padding: 40px;
+            text-align: center;
+            background: #f0f0f0;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .value-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .tick {
+            color: yellow;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Logo</div>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>WE LOVE ALL PEOPLE</h1>
+            <p>Working together to provide food, water, healthcare, and education to those in need.</p>
+            <div class="buttons">
+                <button class="donate">Donate Now</button>
+                <button class="join">Join Us</button>
+            </div>
+        </div>
+    </header>
+    
+    <section class="services">
+        <div class="service-box">
+            <h3>Healthy Food</h3>
+            <p>Providing nutritious meals.</p>
+        </div>
+        <div class="service-box">
+            <h3>Pure Water</h3>
+            <p>Ensuring clean drinking water.</p>
+        </div>
+        <div class="service-box">
+            <h3>Medical Facilities</h3>
+            <p>Access to essential healthcare.</p>
+        </div>
+        <div class="service-box">
+            <h3>Pure Education</h3>
+            <p>Empowering through education.</p>
+        </div>
+    </section>
+    
+    <section class="about-container">
+        <div class="about-image">
+            <!-- Add the image using the provided URL -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3adYOUiJfebyo3fH_t1VNMFWpBYr0EPY4wA&s" alt="Children" />
+        </div>
+        <div class="about-content">
+            <h2>What we are doing now</h2>
+            <p>We are actively working to uplift underprivileged communities through sustainable initiatives.</p>
+            <button>Learn More</button>
+        </div>
+    </section>
+    
+    <section class="values">
+        <h2>Our Core Values</h2>
+        <div class="values-grid">
+            <div class="value-item">
+                <span class="tick">✔</span>
+                <h3>Service beyond self</h3>
+                <p>Committed to making a difference.</p>
+            </div>
+            <div class="value-item">
+                <span class="tick">✔</span>
+                <h3>Empowerment</h3>
+                <p>Helping individuals grow.</p>
+            </div>
+            <div class="value-item">
+                <span class="tick">✔</span>
+                <h3>Accountability</h3>
+                <p>Ensuring transparency.</p>
+            </div>
+            <div class="value-item">
+                <span class="tick">✔</span>
+                <h3>Sustainability</h3>
+                <p>Building a lasting impact.</p>
+            </div>
+            <div class="value-item">
+                <span class="tick">✔</span>
+                <h3>Integrity</h3>
+                <p>Upholding strong moral values.</p>
+            </div>
+            <div class="value-item">
+                <span class="tick">✔</span>
+                <h3>Transparency</h3>
+                <p>Being open about our work.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
